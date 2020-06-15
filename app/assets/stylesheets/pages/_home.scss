@@ -17,17 +17,17 @@ html, body {
   overflow: hidden;
 }
 
-.home-div i {
-  font-size: calc( 3vh + 3vw);
+.home-div i, .about i, .rules i, .prices i {
+  font-size: calc( 2vh + 2vw);
 }
 
 
 .home-div_first-letter {
-  font-size: calc( 3vh + 3vw );
+  font-size: calc( 2.5vh + 2.5vw );
 }
 
 .home-div_word {
-  font-size: calc( 2vh + 2vw );
+  font-size: calc( 1.5vh + 1.5vw );
   margin-top: 10px;
 }
 
@@ -35,6 +35,10 @@ html, body {
   height: 30%;
   background-color: $yellow;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 30px;
 }
 #home-video {
   position: absolute;

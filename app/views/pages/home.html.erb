@@ -12,15 +12,35 @@
     </div>
     <div class="col-12 col-lg-3 home-div">
       <div class="d-flex mt-3 align-items-center justify-content-center">
-        <div><i class="fas fa-newspaper"></i> </div>
-        <div><p class="font home-div_first-letter font-weight"> n</p></div>
-        <div><p class="font home-div_word font-weight">ews</p></div>
+        <div><i class="fas fa-newspaper mr-3"></i> </div>
+        <div><p class="font home-div_first-letter font-weight">a</p></div>
+        <div><p class="font home-div_word font-weight">nunțuri</p></div>
       </div>
     </div>
     <div class="col-12 col-lg-3 d-flex flex-column justify-content-between home-3rd-div">
-      <div class="about"></div>
-      <div class="rules"></div>
-      <div class="prices"></div>
+      <%= link_to '#', class: 'about' do %>
+      <div class="d-flex mt-3 align-items-center justify-content-center blue">
+        <div><i class="fas fa-question-circle mr-3"></i></div>
+        <div><p class="font home-div_first-letter font-weight">d</p></div>
+        <div><p class="font home-div_word font-weight">espre</p></div>
+        <div><p class="font home-div_first-letter font-weight">n</p></div>
+        <div><p class="font home-div_word font-weight">oi</p></div>
+      </div>
+      <% end %>
+      <%= link_to '#', class: 'rules' do %>
+        <div class="d-flex mt-3 align-items-center justify-content-center blue">
+        <div><i class="fas fa-swimming-pool mr-3"></i></div>
+        <div><p class="font home-div_first-letter font-weight">r</p></div>
+        <div><p class="font home-div_word font-weight">egulament</p></div>
+      </div>
+      <% end %>
+      <%= link_to '#', class: 'prices' do %>
+        <div class="d-flex mt-3 align-items-center blue">
+        <div><i class="fas fa-coins mr-3"></i></div>
+        <div><p class="font home-div_first-letter font-weight">p</p></div>
+        <div><p class="font home-div_word font-weight">rețuri</p></div>
+      </div>
+      <% end %>
     </div>
   </div>
 </div>
