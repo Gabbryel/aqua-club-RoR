@@ -1,2 +1,26 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-fluid desktop blue">
+  <div class="row home-master justify-content-around align-items-center">
+    <div class="col-12 col-lg-4 home-div p-0 d-flex justify-content-center">
+      <%= video_tag(
+        'aqua.mp4',
+        id: 'home-video',
+        autoplay: true,
+        loop: true,
+        muted: true,
+        poster: 'aqua.jpg'
+      ) %>
+    </div>
+    <div class="col-12 col-lg-3 home-div">
+      <div class="d-flex mt-3 align-items-center justify-content-center">
+        <div><i class="fas fa-newspaper"></i> </div>
+        <div><p class="font home-div_first-letter font-weight"> n</p></div>
+        <div><p class="font home-div_word font-weight">ews</p></div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 d-flex flex-column justify-content-between home-3rd-div">
+      <div class="about"></div>
+      <div class="rules"></div>
+      <div class="prices"></div>
+    </div>
+  </div>
+</div>

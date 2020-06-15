@@ -1,0 +1,22 @@
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: $yellow;
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer-social i {
+  font-size: 50px;
+  margin-right: 20px;
+  color: $blue;
+  width: 100%;
+}
+
+.web-dev {
+  right: 15px;
+  top: 2px;
+  img { 
+    height: 30px;
+  }
+}

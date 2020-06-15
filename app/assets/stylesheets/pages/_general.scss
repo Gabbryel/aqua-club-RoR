@@ -1,0 +1,16 @@
+.font {
+  font-family: $font;
+}
+
+.font-weight {
+  text-shadow: 1px 1px 1px $blue,
+               2px 2px 1px $blue;
+}
+
+.blue {
+  color: $blue;
+}
+
+.yellow {
+  color: $yellow;
+}

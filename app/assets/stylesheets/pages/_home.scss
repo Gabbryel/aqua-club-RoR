@@ -1,1 +1,43 @@
-// Specific CSS for your home-page
+html, body {
+  position: relative;
+  height: 100vh;
+  background-color: $blue;
+}
+.home-master {
+  height: 90vh;
+}
+
+.home-div, .home-3rd-div {
+  border-radius: 20px;
+  height: 70%;
+}
+
+.home-div {
+  background-color: $yellow;
+  overflow: hidden;
+}
+
+.home-div i {
+  font-size: calc( 3vh + 3vw);
+}
+
+
+.home-div_first-letter {
+  font-size: calc( 3vh + 3vw );
+}
+
+.home-div_word {
+  font-size: calc( 2vh + 2vw );
+  margin-top: 10px;
+}
+
+.about, .rules, .prices {
+  height: 30%;
+  background-color: $yellow;
+  border-radius: 20px;
+}
+#home-video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
