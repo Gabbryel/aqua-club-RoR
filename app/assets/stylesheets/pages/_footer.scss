@@ -1,5 +1,5 @@
 footer {
-  height: 80px;
+  height: 8vh;
   width: 100%;
   background-color: $yellow;
   position: fixed;
@@ -7,16 +7,18 @@ footer {
 }
 
 .footer-social i {
-  font-size: 50px;
+  font-size: calc( 4vh + 1vw );
   margin-right: 20px;
   color: $blue;
   width: 100%;
 }
 
 .web-dev {
+  height: 80%;
+  top: 10%;
   right: 15px;
-  top: 2px;
+  font-size: calc( .5vh + .4vw );
   img { 
-    height: 30px;
+    height: calc( 1.5vh + .8vw);
   }
 }

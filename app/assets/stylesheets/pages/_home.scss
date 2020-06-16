@@ -3,8 +3,13 @@ html, body {
   height: 100vh;
   background-color: $blue;
 }
+
+.desktop {
+  top: 10vh;
+}
+
 .home-master {
-  height: 90vh;
+  height: 80vh;
 }
 
 .home-div, .home-3rd-div {
@@ -44,4 +49,12 @@ html, body {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
+}
+
+// media queries 
+
+@media only screen and (max-width: 1199px) and (min-width: 577px)  {
+  .home-div, .home-3rd-div {
+    height: 40%;
+  }
 }

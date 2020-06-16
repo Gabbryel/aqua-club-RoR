@@ -1,6 +1,7 @@
-<div class="container-fluid desktop blue">
-  <div class="row home-master justify-content-around align-items-center">
-    <div class="col-12 col-lg-4 home-div p-0 d-flex justify-content-center">
+<div class="container-fluid desktop position-relative blue">
+  <div class="row mt-md-2 mt-xl-0 home-master justify-content-around align-items-center">
+    <!-- video div -->
+    <div class="col-12 col-md-11 col-xl-4 mb-md-5 home-div video-div p-0 d-flex justify-content-center">
       <%= video_tag(
         'aqua.mp4',
         id: 'home-video',
@@ -10,16 +11,18 @@
         poster: 'aqua.jpg'
       ) %>
     </div>
-    <div class="col-12 col-lg-3 home-div">
+    <!-- news div -->
+    <div class="col-12 col-md-5 col-xl-3 home-div mb-md-5">
       <div class="d-flex mt-3 align-items-center justify-content-center">
         <div><i class="fas fa-newspaper mr-3"></i> </div>
         <div><p class="font home-div_first-letter font-weight">a</p></div>
         <div><p class="font home-div_word font-weight">nunțuri</p></div>
       </div>
     </div>
-    <div class="col-12 col-lg-3 d-flex flex-column justify-content-between home-3rd-div">
+   <!-- nav div -->
+    <div class="col-12 col-md-5 col-xl-4 d-flex flex-column mb-md-5 justify-content-between home-3rd-div">
       <%= link_to '#', class: 'about' do %>
-      <div class="d-flex mt-3 align-items-center justify-content-center blue">
+      <div class="d-flex align-items-center justify-content-center blue">
         <div><i class="fas fa-question-circle mr-3"></i></div>
         <div><p class="font home-div_first-letter font-weight">d</p></div>
         <div><p class="font home-div_word font-weight">espre</p></div>
@@ -28,14 +31,14 @@
       </div>
       <% end %>
       <%= link_to '#', class: 'rules' do %>
-        <div class="d-flex mt-3 align-items-center justify-content-center blue">
+        <div class="d-flex align-items-center justify-content-center blue">
         <div><i class="fas fa-swimming-pool mr-3"></i></div>
         <div><p class="font home-div_first-letter font-weight">r</p></div>
         <div><p class="font home-div_word font-weight">egulament</p></div>
       </div>
       <% end %>
       <%= link_to '#', class: 'prices' do %>
-        <div class="d-flex mt-3 align-items-center blue">
+        <div class="d-flex align-items-center blue">
         <div><i class="fas fa-coins mr-3"></i></div>
         <div><p class="font home-div_first-letter font-weight">p</p></div>
         <div><p class="font home-div_word font-weight">rețuri</p></div>
