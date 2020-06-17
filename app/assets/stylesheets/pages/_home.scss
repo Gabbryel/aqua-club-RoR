@@ -1,11 +1,16 @@
 html, body {
   position: relative;
-  height: 100vh;
   background-color: $blue;
+  width: 100%;
+  height: 100%;
 }
 
 .desktop {
   top: 10vh;
+}
+
+.mobile {
+  display: none;
 }
 
 .home-master {
@@ -43,18 +48,46 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: start;
-  padding-left: 30px;
+  padding-left: 20%;
 }
 #home-video {
   position: absolute;
   min-width: 100%;
-  min-height: 100%;
 }
 
 // media queries 
 
-@media only screen and (max-width: 1199px) and (min-width: 577px)  {
+@media only screen and (max-width: 1199px) and (min-width: 576px)  {
   .home-div, .home-3rd-div {
     height: 40%;
   }
+}
+
+@media only screen and (max-width: 575px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: contents;
+    position: relative;
+  }
+
+  .home-video-mobile {
+    height: 99vh;
+    overflow: hidden;
+    padding: 0;
+    #home-video {
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+  // .home-mobile {
+  //   background-color: $yellow;
+  //   height: 130px;
+  // }
+  // .blue-background {
+  //   background-color: $blue;
+  // }
+  
 }
