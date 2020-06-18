@@ -1,3 +1,8 @@
+// scroll bar
+::-webkit-scrollbar {
+  width: 1px;
+}
+// end
 a {
   &:hover {
     text-decoration: none;
@@ -19,4 +24,12 @@ a {
 
 .yellow {
   color: $yellow;
+}
+
+.bck-blue {
+  background-color: $blue;
+}
+
+.bck-yellow {
+  background-color: $yellow;
 }
