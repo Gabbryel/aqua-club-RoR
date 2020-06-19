@@ -18,6 +18,10 @@ a {
                1.2px 1.2px 1.2px $blue;
 }
 
+.f-w-light {
+  text-shadow: .3px .3px 1px $blue;
+}
+
 .blue {
   color: $blue;
 }
@@ -32,4 +36,10 @@ a {
 
 .bck-yellow {
   background-color: $yellow;
+}
+
+.round-border {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
 }

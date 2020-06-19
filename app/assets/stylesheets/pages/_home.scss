@@ -51,6 +51,8 @@ html, body {
   padding-left: 20%;
 }
 .video-div {
+  overflow: hidden;
+  z-index: 2;
   #home-video {
     position: absolute;
     min-width: 100%;
@@ -78,22 +80,21 @@ html, body {
 
   .mobile {
     width: 100%;
-    display: contents;
+    display: inline-block;
     position: relative;
   }
 
   .home-video-mobile {
-    height: 190px;
+    height: 200px;
     width: 100%;
-    overflow: hidden;
     padding: 0;
     border-radius: 20px;
-    #home-video {
-      position: absolute;
-      width: 100%;
-      border-radius: 20px;
-      margin: 0 auto;
-    }
+      #home-video {
+        position: absolute;
+        width: 100%;
+        border-radius: 20px;
+        margin: 0 auto;
+      }
   }
 
   .home-news-mobile {
@@ -113,7 +114,7 @@ html, body {
     font-size: calc(1.2vh + 2vw);
   }
   .home-rules-mobile, .home-about-mobile {
-    height: 150px;
+    height: 130px;
     width: 100%;
     border-radius: 20px;
   }

@@ -1,13 +1,15 @@
 <div class="container-fluid desktop position-relative blue">
   <div class="row mt-md-2 mt-xl-0 home-master justify-content-around align-items-center">
     <!-- video div -->
-    <div class="col-12 col-sm-11 col-xl-4 mb-md-5  video-div p-0 d-flex justify-content-center home-div">
-      <%= cl_video_tag("aqua_drzusw",
+    <div class="col-12 col-sm-11 col-xl-4 mb-md-5  video-div p-0 d-flex justify-content-center home-div rounded-border">
+      <!-- <%= cl_video_tag("aqua_drzusw",
           id: 'home-video',
+          class: 'rounded-border',
           autoplay: true,
           loop: true,
           muted: true
-      ) %>
+      ) %> -->
+      
     </div>
     <!-- news div -->
     <div class="col-12 col-sm-5 col-xl-3 home-div mb-md-5">
@@ -39,36 +41,25 @@
     </div>
   </div>
 </div>
+
+
 <!-- mobile -->
 <div class="container-fluid mobile mb-5">
   <div class="row justify-content-center py-5 my-5">
-    <div class="col-10 home-video-mobile">
-      <%= cl_video_tag("aqua_drzusw",
+    <div class="col-10 mb-4 home-video-mobile">
+      <!-- <%= cl_video_tag("aqua_drzusw",
           id: 'home-video',
           class: 'mt-5',
           autoplay: true,
           loop: true,
           muted: true,
           playsinline: true,
-      ) %>
+      ) %> -->
     </div>
     <div class="col-10 home-news-mobile mt-5 bck-yellow">
       <h1 class='font text-center my-4 blue font-weight'><i class="fas fa-newspaper"> </i> Info</h1>
       <div class='home-news-scroll pb-4'>
-      <p>Lorem Ipsum is simply dummy text of the 
-        printing and typesetting industry. Lorem Ipsum has been 
-        the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled 
-        it to make a type specimen book. It has survived not only five centuries,
-         but also the leap into electronic typesetting, remaining essentially unchanged
-      </p>
-      <p>Lorem Ipsum is simply dummy text of the 
-        printing and typesetting industry. Lorem Ipsum has been 
-        the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled 
-        it to make a type specimen book. It has survived not only five centuries,
-         but also the leap into electronic typesetting, remaining essentially unchanged
-      </p>
+      
       </div>
     </div>
     <div class="col-10 home-prices-mobile mt-5 bck-yellow">
