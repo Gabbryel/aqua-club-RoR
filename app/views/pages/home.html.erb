@@ -13,11 +13,12 @@
     </div>
     <!-- news div -->
     <div class="col-12 col-sm-5 col-xl-3 home-div mb-md-5 hover scroll" data-toggle="modal" data-target="#about">
-      <div class="d-flex flex-column mt-3">
+      <div class="d-flex flex-column mt-5">
           <% @articles.each do |a| %>
           <div class="article font bck-blue yellow round-border my-3">
+            <p class='pl-3 pt-3 m-0'>Update din: <%= a.created_at.to_s.split(' ').first.split('-').reverse().join('-') %></p>
+            <hr class='bck-yellow'>
             <p class='pt-3 px-3'><%= a.body %></p>
-            <p class='pl-3'><%= a.created_at.to_s.split(' ').first %></p>
             <% if current_user %>
               <div class="news-edit">
                 <%= link_to 'edit', edit_article_path(a) %>
@@ -56,8 +57,9 @@
     <div class="col-10 home-news-mobile mt-5 bck-yellow scroll">
       <% @articles.each do |a| %>
           <div class="article font bck-blue yellow round-border my-5">
-            <p class='pt-3 px-3'><%= a.body %></p>
-            <p class='pl-3'><%= a.created_at.to_s.split(' ').first %></p>
+            <p class='pl-3 pt-3 m-0'>Update din: <%= a.created_at.to_s.split(' ').first.split('-').reverse().join('-') %></p>
+            <hr class='bck-yellow'>
+            <p class='px-3'><%= a.body %></p>
             <% if current_user %>
               <div class="news-edit">
                 <%= link_to 'edit', edit_article_path(a) %>

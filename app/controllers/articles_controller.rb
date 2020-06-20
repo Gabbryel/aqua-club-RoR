@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
     skip_before_action :authenticate_user!, only: %i[index]
-    before_action :set_article, only: %i[ edit destroy]
+    before_action :set_article, only: %i[ edit update destroy]
 
     def new
         @article = Article.new
@@ -9,22 +9,28 @@ class ArticlesController < ApplicationController
     def create
         @article = Article.create(article_params)
         if @article.save
-            redirect_to root_path
+            redirect_to articles_path
         else
             render :new
         end
     end
 
     def index
+        @article = Article.new
         @articles = Article.all.order('id DESC')
     end
 
     def edit
         @article = Article.find(params[:id])
     end
-
+    
     def update
-        
+        @article.update(article_params)
+        if @article.update(article_params)
+            redirect_to articles_path
+        else
+            render :edit
+        end
     end
 
     def destroy

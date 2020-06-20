@@ -1,0 +1,13 @@
+<% if @article.id %>
+    <h1 class='font yellow f-w-light-y text-center my-5'>Modifică articolul</h1>
+<% else %>
+    <h1 class='font yellow f-w-light-y text-center my-5'>Articol nou</h1>
+<% end %>
+<%= simple_form_for @article do |f| %>
+<%= f.input :body, label: 'Conținutul articolului', label_html: { class: 'font yellow'} %>
+<% if @article.id %>
+    <%= f.button :submit, value: 'Salvează', class: 'font blue bck-yellow  f-w-light' %>
+<% else %>
+    <%= f.button :submit, value: 'Articol nou', class: 'font blue bck-yellow  f-w-light' %>
+<% end %>
+<% end %>
