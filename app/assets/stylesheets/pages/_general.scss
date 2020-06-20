@@ -19,15 +19,28 @@ a {
 }
 
 .f-w-light {
-  text-shadow: .3px .3px 1px $blue;
+  text-shadow: .3px .3px 1px $blue,
+               .4px .4px 1.2px $blue,
+               .5px .5px 1.3px $blue;
+
+}
+
+.f-w-light-y {
+  text-shadow: .3px .3px 1px $yellow
 }
 
 .blue {
   color: $blue;
+  a {
+    color: $blue;
+  }
 }
 
 .yellow {
   color: $yellow;
+  a {
+    color: $yellow;
+  }
 }
 
 .bck-blue {
@@ -42,4 +55,14 @@ a {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
+}
+
+.hover {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.scroll {
+  overflow-y: scroll;
 }

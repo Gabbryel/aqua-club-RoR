@@ -2,42 +2,39 @@
   <div class="row mt-md-2 mt-xl-0 home-master justify-content-around align-items-center">
     <!-- video div -->
     <div class="col-12 col-sm-11 col-xl-4 mb-md-5  video-div p-0 d-flex justify-content-center home-div rounded-border">
-      <!-- <%= cl_video_tag("aqua_drzusw",
+      <%= cl_video_tag("aqua_drzusw",
           id: 'home-video',
           class: 'rounded-border',
           autoplay: true,
           loop: true,
           muted: true
-      ) %> -->
+      ) %>
       
     </div>
     <!-- news div -->
-    <div class="col-12 col-sm-5 col-xl-3 home-div mb-md-5">
-      <div class="d-flex mt-3 align-items-center justify-content-center">
-        <div><i class="fas fa-newspaper mr-3"></i> </div>
-        <div><p class="font home-div_word font-weight">Info</p></div>
+    <div class="col-12 col-sm-5 col-xl-3 home-div mb-md-5 hover scroll" data-toggle="modal" data-target="#about">
+      <div class="d-flex flex-column mt-3">
+          <% @articles.each do |a| %>
+          <div class="article font bck-blue yellow round-border my-3">
+            <p class='pt-3 px-3'><%= a.body %></p>
+            <p class='pl-3'><%= a.created_at.to_s.split(' ').first %></p>
+            <% if current_user %>
+              <div class="news-edit">
+                <%= link_to 'edit', edit_article_path(a) %>
+                <%= link_to 'del', article_path(a), method: :delete %>
+              </div>
+            <% end %>
+          </div>
+          <% end %>
       </div>
+      <%= link_to 'articole mai vechi', articles_path, class: 'text-center btn btn-lg font d-block text-center' %>
     </div>
    <!-- nav div -->
     <div class="col-12 col-sm-5 col-xl-4 d-flex flex-column mb-md-5 justify-content-sm-between home-3rd-div p-0">
-      <%= link_to '#', class: 'about' do %>
-      <div class="d-flex align-items-center justify-content-center blue">
-        <div><i class="fas fa-info-circle mr-3"></i></div>
-        <div><p class="font home-div_word font-weight">Despre noi</p></div>
+        <h1 class='font text-center blue font-weight mb-3 about' data-toggle="modal" data-target="#about"><i class="fas fa-info-circle mr-3"></i> Despre noi</h1>
+        <h1 class='font text-center blue font-weight mb-3 rules' data-toggle="modal" data-target="#rules"><i class="fas fa-swimming-pool mr-3"></i> Regulament</h1>
+        <h1 class='font text-center blue font-weight mb-3 prices' data-toggle="modal" data-target="#prices"><i class="fas fa-coins mr-3"></i> Prețuri</h1>
       </div>
-      <% end %>
-      <%= link_to '#', class: 'rules' do %>
-        <div class="d-flex align-items-center justify-content-center blue">
-        <div><i class="fas fa-swimming-pool mr-3"></i></div>
-        <div><p class="font home-div_word font-weight">Regulament</p></div>
-      </div>
-      <% end %>
-      <%= link_to '#', class: 'prices' do %>
-        <div class="d-flex align-items-center blue">
-        <div><i class="fas fa-coins mr-3"></i></div>
-        <div><p class="font home-div_word font-weight">Prețuri</p></div>
-      </div>
-      <% end %>
     </div>
   </div>
 </div>
@@ -47,31 +44,33 @@
 <div class="container-fluid mobile mb-5">
   <div class="row justify-content-center py-5 my-5">
     <div class="col-10 mb-4 home-video-mobile">
-      <!-- <%= cl_video_tag("aqua_drzusw",
+      <%= cl_video_tag("aqua_drzusw",
           id: 'home-video',
           class: 'mt-5',
           autoplay: true,
           loop: true,
           muted: true,
           playsinline: true,
-      ) %> -->
+      ) %>
     </div>
-    <div class="col-10 home-news-mobile mt-5 bck-yellow">
-      <h1 class='font text-center my-4 blue font-weight'><i class="fas fa-newspaper"> </i> Info</h1>
-      <div class='home-news-scroll pb-4'>
-      
-      </div>
+    <div class="col-10 home-news-mobile mt-5 bck-yellow scroll">
+      <% @articles.each do |a| %>
+          <div class="article font bck-blue yellow round-border my-5">
+            <p class='pt-3 px-3'><%= a.body %></p>
+            <p class='pl-3'><%= a.created_at.to_s.split(' ').first %></p>
+            <% if current_user %>
+              <div class="news-edit">
+                <%= link_to 'edit', edit_article_path(a) %>
+                <%= link_to 'del', article_path(a), method: :delete %>
+              </div>
+            <% end %>
+          </div>
+          <% end %>
+          <%= link_to 'articole mai vechi', articles_path, class: 'text-center btn btn-lg font d-block text-center' %>
+
     </div>
     <div class="col-10 home-prices-mobile mt-5 bck-yellow">
-      <h1 class='font text-center my-4 blue font-weight mb-3'><i class="fas fa-coins mr-3"> </i> Prețuri</h1>
-      <div class='font blue text-center font-weight'>
-        <p class='m-0'>Luni - Vineri</p>
-        <h2 class='font'>30 lei</h2>
-        <hr>
-        <p class='m-0'>Sâmbătă - Duminică</p>
-        <h2 class='font'>40 lei</h2>
-        <p>Prețuri valabile pe perioda restricțiilor.</p>
-      </div>
+      <h1 class='font text-center my-4 blue font-weight mb-3 pt-4' data-toggle="modal" data-target="#prices"><i class="fas fa-coins mr-3"> </i> Prețuri</h1>
     </div>
     <div class="col-10 home-rules-mobile mt-5 bck-yellow">
       <h1 class='font text-center my-4 blue font-weight mb-3 pt-4'><i class="fas fa-swimming-pool mr-3"></i> Regulament</h1>

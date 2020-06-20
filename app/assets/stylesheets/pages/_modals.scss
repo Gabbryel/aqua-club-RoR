@@ -1,0 +1,37 @@
+.modal {
+    top: 10vh;
+}
+.modal-body p {
+    font-size: calc(.7vh + 1vw);
+    z-index: 1;
+}
+
+#pool-svg, #cc-svg {
+    position: absolute;
+    width: 100%;
+    opacity: .1;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#cc-svg {
+    width: 50%;
+}
+
+.modal-footer {
+    z-index: 1;
+}
+
+.modal-prices p {
+    font-size: calc(2vh + 1vw);
+}
+
+.modal-prices-disclaimer {
+    font-size: calc(1vh + 1vw) !important;
+}
+
+@media (max-width: 576px) {
+    .modal-body p {
+        font-size: calc(1vh + 2.5vw)
+    }
+}

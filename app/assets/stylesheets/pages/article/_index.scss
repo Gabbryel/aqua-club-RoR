@@ -1,0 +1,15 @@
+.articles-container {
+    position: relative;
+    top: 10vh;
+}
+
+.article-body {
+    border: .6px solid $yellow;
+    font-size: calc(.7vh + 1vw);
+}
+
+@media (max-width: 576px) {
+    .article-body {
+        font-size: calc(1vh + 2.5vw)
+    }
+}

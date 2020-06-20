@@ -31,16 +31,6 @@ html, body {
   font-size: calc( 2vh + 2vw);
 }
 
-
-.home-div_first-letter {
-  font-size: calc( 2.5vh + 2.5vw );
-}
-
-.home-div_word {
-  font-size: calc( 1.5vh + 1.5vw );
-  margin-top: 10px;
-}
-
 .about, .rules, .prices {
   height: 30%;
   background-color: $yellow;
@@ -49,6 +39,9 @@ html, body {
   align-items: center;
   justify-content: start;
   padding-left: 20%;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .video-div {
   overflow: hidden;
@@ -63,6 +56,18 @@ html, body {
     }
   }
 
+}
+
+.article {
+  position: relative;
+  width: 80%;
+  left: 10%;
+}
+
+.news-edit {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
 }
 
 // media queries 
@@ -108,7 +113,7 @@ html, body {
     }
   }
   .home-prices-mobile {
-    height: 300px;
+    height: 130px;
     width: 100%;
     border-radius: 20px;
     font-size: calc(1.2vh + 2vw);
