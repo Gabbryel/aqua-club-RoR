@@ -43,6 +43,12 @@ html, body {
     cursor: pointer;
   }
 }
+.news-div {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .video-div {
   overflow: hidden;
   z-index: 2;
@@ -58,10 +64,14 @@ html, body {
 
 }
 
+.articles {
+  position: relative;
+  height: 80%;
+}
 .article {
   position: relative;
-  width: 80%;
-  left: 10%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 
