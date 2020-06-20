@@ -122,15 +122,11 @@ html, body {
       overflow-y: scroll;
     }
   }
-  .home-prices-mobile {
+  .home-prices-mobile, .home-rules-mobile, .home-about-mobile {
     height: 130px;
     width: 100%;
     border-radius: 20px;
     font-size: calc(1.2vh + 2vw);
   }
-  .home-rules-mobile, .home-about-mobile {
-    height: 130px;
-    width: 100%;
-    border-radius: 20px;
-  }
+  
 }
