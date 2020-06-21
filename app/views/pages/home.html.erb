@@ -11,7 +11,7 @@
           muted: true,
           poster: 'aqua.jpg'
       ) %> -->
-      <video id='home-video' class='rounded-border' preload="metadata" controls autoplay loop muted playsinline>
+      <video id='home-video' class='rounded-border' autoplay loop muted playsinline>
         <source src="<%= video_path('aqua.ogv') %>" type="video/ogg">
         <source src='<%= video_path('aqua.mp4') %>' type='video/mp4'>
         <source src='<%= video_path('aqua.WebM') %>' type='video/webm'>
@@ -64,6 +64,13 @@
           playsinline: true,
           poster: 'aqua.jpg'
       ) %> -->
+      <video id='home-video' class='rounded-border' autoplay loop muted playsinline>
+        <source src="<%= video_path('aqua.ogv') %>" type="video/ogg">
+        <source src='<%= video_path('aqua.mp4') %>' type='video/mp4'>
+        <source src='<%= video_path('aqua.WebM') %>' type='video/webm'>
+        <source src='https://res.cloudinary.com/dqbu9lypc/video/upload/v1592414042/aqua_drzusw.mp4'>
+          <p>Not working!</p>
+      </video>
     </div>
     <div class="col-10 home-news-mobile mt-5 bck-yellow">
       <h1 class='font text-center blue font-weight mt-4 mb-3 news-div'><i class="fas fa-newspaper mr-3"></i>News</h1>
