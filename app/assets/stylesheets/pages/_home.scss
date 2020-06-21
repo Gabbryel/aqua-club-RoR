@@ -22,9 +22,8 @@ html, body {
   height: 70%;
 }
 
-.home-div {
-  background-color: $yellow;
-  overflow: hidden;
+.home-3rd-div p {
+  font-size: calc(1vh + 2vw);
 }
 
 .home-div i, .about i, .rules i, .prices i {
@@ -66,7 +65,7 @@ html, body {
 
 .articles {
   position: relative;
-  height: 70%;
+  height: 80%;
 }
 .article {
   position: relative;
@@ -132,6 +131,9 @@ html, body {
     p {
       font-size: 9vw;
     }
+  }
+  .articles {
+    height: 75%;
   }
   .article p {
     font-size: 4vw;

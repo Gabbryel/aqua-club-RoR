@@ -13,9 +13,9 @@
       
     </div>
     <!-- news div -->
-    <div class="col-12 col-sm-5 col-xl-3 home-div mb-md-5 hover">
+    <div class="col-12 col-sm-5 col-xl-3 home-div mb-md-5 bck-yellow">
       <h1 class='font text-center blue font-weight mt-4 mb-3 news-div'><i class="fas fa-newspaper mr-3"></i>News</h1>
-      <div class="d-flex flex-column my-2 articles scroll round-border">
+      <div class="articles scroll bck-yellow p-0 round-border">
           <% @articles.each do |a| %>
           <div class="article font bck-blue yellow round-border my-3">
             <p class='pt-3 px-3'><%= a.body %></p>
@@ -29,14 +29,14 @@
             <% end %>
           </div>
           <% end %>
-          <%= link_to '👉articole mai vechi', articles_path, class: 'text-center btn btn-lg font d-block text-center' %>
+          <%= link_to '👉articole mai vechi', articles_path, class: 'text-center font d-block text-center' %>
       </div>
     </div>
    <!-- nav div -->
     <div class="col-12 col-sm-5 col-xl-4 d-flex flex-column mb-md-5 justify-content-sm-between home-3rd-div p-0">
-        <h1 class='font text-center blue font-weight mb-3 about' data-toggle="modal" data-target="#about"><i class="fas fa-info-circle mr-3"></i> Despre noi</h1>
-        <h1 class='font text-center blue font-weight mb-3 rules' data-toggle="modal" data-target="#rules"><i class="fas fa-swimming-pool mr-3"></i> Regulament</h1>
-        <h1 class='font text-center blue font-weight mb-3 prices' data-toggle="modal" data-target="#prices"><i class="fas fa-coins mr-3"></i> Prețuri</h1>
+        <p class='font text-center blue font-weight mb-3 about' data-toggle="modal" data-target="#about"><i class="fas fa-info-circle mr-3"></i> Despre noi</p>
+        <p class='font text-center blue font-weight mb-3 rules' data-toggle="modal" data-target="#rules"><i class="fas fa-swimming-pool mr-3"></i> Regulament</p>
+        <p class='font text-center blue font-weight mb-3 prices' data-toggle="modal" data-target="#prices"><i class="fas fa-coins mr-3"></i> Prețuri</p>
       </div>
     </div>
   </div>
