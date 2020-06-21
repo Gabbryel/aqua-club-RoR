@@ -1,6 +1,14 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $yellow $yellow;
+}
+.articles {
+  scrollbar-width: thin;
+  scrollbar-color: $yellow $yellow;
+}
 // scroll bar
-::-webkit-scrollbar {
-  width: 1px;
+.articles::-webkit-scrollbar {
+  width: 0px;
 }
 // end
 a {
