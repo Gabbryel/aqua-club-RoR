@@ -88,6 +88,9 @@ html, body {
   .home-div, .home-3rd-div {
     height: 40%;
   }
+  .articles {
+    height: 75%;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -105,7 +108,6 @@ html, body {
     height: 200px;
     width: 100%;
     padding: 0;
-    border-radius: 20px;
     overflow: hidden;
       #home-video {
         position: absolute;
