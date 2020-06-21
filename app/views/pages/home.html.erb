@@ -1,3 +1,4 @@
+<!-- desktop -->
 <div class="container-fluid desktop position-relative blue">
   <div class="row mt-md-2 mt-xl-0 home-master justify-content-around align-items-center">
     <!-- video div -->
@@ -45,19 +46,18 @@
 <!-- mobile -->
 <div class="container-fluid mobile mb-5">
   <div class="row justify-content-center py-5 my-5">
-    <div class="col-10 mb-4 home-video-mobile">
+    <div class="col-10 mt-5 home-video-mobile">
       <%= cl_video_tag("aqua_drzusw",
           id: 'home-video',
-          class: 'mt-5',
           autoplay: true,
           loop: true,
           muted: true,
           playsinline: true,
       ) %>
     </div>
-    <div class="col-10 home-news-mobile mt-5 bck-yellow scroll">
+    <div class="col-10 home-news-mobile mt-5 bck-yellow">
       <h1 class='font text-center blue font-weight mt-4 mb-3 news-div'><i class="fas fa-newspaper mr-3"></i>News</h1>
-      <div class="d-flex flex-column my-4 articles scroll round-border">
+      <div class="d-flex flex-column articles round-border scroll">
       <% @articles.each do |a| %>
           <div class="article font bck-blue yellow round-border mt-4">
             <p class='px-3 pb-3'><%= a.body %></p>
@@ -74,14 +74,14 @@
           <%= link_to '👉articole mai vechi', articles_path, class: 'text-center btn btn-lg font d-block text-center pb-3' %>
       </div>
     </div>
-    <div class="col-10 home-prices-mobile mt-5 bck-yellow">
-      <h1 class='font text-left my-4 blue font-weight mb-3 pl-3 pt-4' data-toggle="modal" data-target="#prices"><i class="fas fa-coins mr-3"> </i> Prețuri</h1>
+    <div class="col-10 home-prices-mobile d-flex align-items-center mt-5 bck-yellow">
+      <p class='font text-left my-4 blue font-weight mb-3 pl-3' data-toggle="modal" data-target="#prices"><i class="fas fa-coins mr-3"> </i> Prețuri</p>
     </div>
-    <div class="col-10 home-rules-mobile mt-5 bck-yellow">
-      <h1 class='font text-left my-4 blue font-weight mb-3 pl-3 pt-4'><i class="fas fa-swimming-pool mr-3"></i> Regulament</h1>
+    <div class="col-10 home-rules-mobile d-flex align-items-center mt-5 bck-yellow">
+      <p class='font text-left my-4 blue font-weight mb-3 pl-3'><i class="fas fa-swimming-pool mr-3"></i> Regulament</p>
     </div>
-    <div class="col-10 home-about-mobile my-5 bck-yellow">
-      <h1 class='font text-left my-4 blue font-weight mb-3 pl-3 pt-4'><i class="fas fa-info-circle mr-3"></i> Prezentare</h1>
+    <div class="col-10 home-about-mobile d-flex align-items-center my-5 bck-yellow">
+      <p class='font text-left my-4 blue font-weight mb-3 pl-3'><i class="fas fa-info-circle mr-3"></i> Prezentare</p>
     </div>
   </div>
 </div>
