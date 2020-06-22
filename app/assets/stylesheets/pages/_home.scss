@@ -33,7 +33,7 @@ html, body {
 }
 
 .about, .rules, .prices {
-  height: 29%;
+  height: 23%;
   width: 100%;
   background-color: $yellow;
   border-radius: 20px;
@@ -116,7 +116,7 @@ html, body {
     height: 30vh;
   }
   .home-3rd-div {
-    height: 55vh;
+    height: 70vh;
     margin-bottom: 60px;
   }
   
@@ -125,13 +125,20 @@ html, body {
   }
 
   .about, .rules, .prices {
-    height: 33%;
+    height: 40%;
     margin-bottom: 30px;
+    padding-left: 20%;
   }
-  .about p, .rules p, .prices p {
-    font-size: 3.5vh;
+  
+  .about i, .rules i, .prices i {
+    font-size: calc( 2vh + 3.5vw);
   }
+  
   .articles p {
     font-size: 4vw;
+  }
+  
+  .about p, .rules p, .prices p {
+    font-size: 7vw;
   }
 }
