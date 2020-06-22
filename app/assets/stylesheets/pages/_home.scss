@@ -15,12 +15,17 @@ html, body {
 }
 
 .home-master {
-  height: 80vh;
+  height: 85vh;
 }
 
 .home-div, .home-3rd-div {
+  position: relative;
   border-radius: 20px;
-  height: 70%;
+  height: 60vh;
+}
+
+.box-shadow {
+  box-shadow: 1px 1px 10px black;
 }
 
 .home-3rd-div p {
@@ -32,7 +37,7 @@ html, body {
 }
 
 .about, .rules, .prices {
-  height: 30%;
+  height: 33.33%;
   background-color: $yellow;
   border-radius: 20px;
   display: flex;
