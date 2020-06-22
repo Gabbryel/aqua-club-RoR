@@ -7,7 +7,7 @@ html, body {
 }
 
 .desktop {
-  top: 10vh;
+  top: 20vh;
 }
 
 .mobile {
@@ -37,13 +37,14 @@ html, body {
 }
 
 .about, .rules, .prices {
-  height: 33.33%;
+  height: 29%;
+  width: 100%;
   background-color: $yellow;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: start;
-  padding-left: 20%;
+  padding-left: 10%;
   &:hover {
     cursor: pointer;
   }
@@ -71,7 +72,7 @@ html, body {
 
 .articles {
   position: relative;
-  height: 80%;
+  height: 70%;
 }
 .article {
   position: relative;
@@ -79,7 +80,7 @@ html, body {
   margin: 0 auto;
 }
 .article p {
-  font-size: calc( 1vh + .5vw );
+  font-size: calc( 1vh + .8vw );
 }
 
 
@@ -91,60 +92,46 @@ html, body {
 // media queries 
 
 @media only screen and (max-width: 1199px) and (min-width: 576px)  {
-  .home-div, .home-3rd-div {
-    height: 40%;
+  .home-master {
+    height: 80vh;
   }
-  .articles {
-    height: 75%;
+  .home-div, .home-3rd-div {
+    position: relative;
+    border-radius: 20px;
+    height: 35vh;
+  }
+  .desktop {
+    top: 8vh;
+  }
+  .about, .rules, .prices {
+    padding-left: 20%;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .desktop {
-    display: none;
-  }
-
-  .mobile {
-    width: 100%;
-    display: inline-block;
-    position: relative;
-  }
-
-  .home-video-mobile {
-    height: 200px;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-    z-index: 1;
-      #home-video {
-        position: absolute;
-        height: 100%;
-      }
-  }
-
-  .home-news-mobile {
-    height: 400px;
-    width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-    .home-news-scroll {
-      height: 250px;
-      overflow-y: scroll;
-    }
-  }
-  .home-prices-mobile, .home-rules-mobile, .home-about-mobile {
-    height: 30vw;
-    width: 100%;
-    border-radius: 20px;
-    p {
-      font-size: 9vw;
-    }
-  }
-  .articles {
-    height: 75%;
-  }
-  .article p {
-    font-size: 4vw;
+    top: 10vh;
   }
   
+  .home-div {
+    margin-top: 30px;
+    position: relative;
+    border-radius: 20px;
+    height: 30vh;
+  }
+  .home-3rd-div {
+    height: 55vh;
+    margin-bottom: 60px;
+  }
+ 
+  .about, .rules, .prices {
+    height: 33%;
+    margin-bottom: 30px;
+  }
+  .about p, .rules p, .prices p {
+    font-size: 3.5vh;
+  }
+  .articles p {
+    font-size: 4vw;
+  }
 }
