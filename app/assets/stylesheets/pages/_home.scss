@@ -15,17 +15,13 @@ html, body {
 }
 
 .home-master {
-  height: 85vh;
+  height: 80vh;
 }
 
 .home-div, .home-3rd-div {
   position: relative;
   border-radius: 20px;
   height: 60vh;
-}
-
-.box-shadow {
-  box-shadow: 1px 1px 10px black;
 }
 
 .home-3rd-div p {
@@ -101,7 +97,7 @@ html, body {
     height: 35vh;
   }
   .desktop {
-    top: 8vh;
+    top: 10vh;
   }
   .about, .rules, .prices {
     padding-left: 20%;
@@ -123,7 +119,11 @@ html, body {
     height: 55vh;
     margin-bottom: 60px;
   }
- 
+  
+  .news-container {
+    height: 50vh;
+  }
+
   .about, .rules, .prices {
     height: 33%;
     margin-bottom: 30px;
