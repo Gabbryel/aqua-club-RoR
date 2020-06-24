@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
     skip_before_action :authenticate_user!, only: %i[index]
-    before_action :set_article, only: %i[ edit update destroy]
+    before_action :set_article, only: %i[ edit update destroy ]
 
     def new
         @article = Article.new
@@ -25,7 +25,6 @@ class ArticlesController < ApplicationController
     end
     
     def update
-        @article.update(article_params)
         if @article.update(article_params)
             redirect_to articles_path
         else

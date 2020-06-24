@@ -34,7 +34,8 @@ a {
 }
 
 .f-w-light-y {
-  text-shadow: .3px .3px 1px $yellow
+  text-shadow: .3px .3px 1px $yellow,
+               .4px .4px 2px black;
 }
 
 .blue {
@@ -77,10 +78,15 @@ a {
 }
 
 textarea.form-control {
-  height: 200px;
+  height: 100px;
   border-radius: 20px;
 }
 
 .box-shadow {
   box-shadow: 1px 1px 10px rgb(6, 6, 37);
+}
+
+#optgroup {
+  background-color: $yellow;
+  color: yellow;
 }
