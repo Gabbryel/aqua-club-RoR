@@ -42,9 +42,11 @@
         <div class="col-11 font-weight box-shadow prices" data-toggle="modal" data-target="#prices">
           <p class='font text-center m-0 d-flex justify-content-center align-items-center blue'><i class="fas fa-coins mr-3"></i> Prețuri</p>
         </div>
-        <div class='col-11 about box-shadow' data-toggle="modal" data-target="#about">
-          <p class='font text-center m-0 d-flex justify-content-center align-items-center blue font-weight' ><i class="fas fa-info-circle mr-3"></i> Despre noi</p>
-        </div>
+        <div class='col-11 about box-shadow'>
+          <%= link_to about_path do %>
+            <p class='font text-center m-0 d-flex justify-content-center align-items-center blue font-weight' ><i class="fas fa-info-circle mr-3"></i> Despre noi</p>
+          <% end %>
+          </div>
       </div>
       </div>
     </div>
