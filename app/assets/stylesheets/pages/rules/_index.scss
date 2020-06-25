@@ -1,7 +1,8 @@
 // rules/index.scss
 
 .rule-card {
-    height: 120px;
+    height: 140px;
+    min-width: 370px;
     border: 1px solid $yellow;
     padding: 13px;
     p {
