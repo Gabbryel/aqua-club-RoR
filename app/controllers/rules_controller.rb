@@ -30,7 +30,7 @@ class RulesController < ApplicationController
 
     def index
         @rule = Rule.new
-        @rules = Rule.all
+        @rules = Rule.all.order('id ASC')
     end
 
     def destroy
