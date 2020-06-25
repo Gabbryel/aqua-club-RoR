@@ -1,0 +1,26 @@
+// rules/index.scss
+
+.rule-card {
+    height: 150px;
+    min-width: 360px;
+    border: 1px solid $yellow;
+    padding: 13px;
+    p {
+        font-size: calc(.75rem + 1vw);
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .rule-card {
+        min-width: 310px;
+    }
+}
+
+.rule-controls {
+    top: 0;
+    right: -20px;
+}
+
+.rules-page-title {
+    font-size: calc(2rem + 1vw);
+}

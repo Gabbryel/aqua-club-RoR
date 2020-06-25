@@ -1,0 +1,5 @@
+<%= simple_form_for @rule  do |f| %>
+    <%= f.input :body, label: 'Scrie o regulă nouă' %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit, value: 'Regula noua', class: 'bck-yellow blue round-border' %>
+<% end %>

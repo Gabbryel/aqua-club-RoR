@@ -4,6 +4,7 @@ html, body {
   width: 100%;
   height: 100%;
   scrollbar-width: 1px;
+  font: $font;
 }
 
 .desktop {
@@ -100,7 +101,7 @@ html, body {
     top: 10vh;
   }
   .about, .rules, .prices {
-    padding-left: 20%;
+    padding-left: 10%;
   }
 }
 

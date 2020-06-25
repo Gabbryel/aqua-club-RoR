@@ -1,0 +1,30 @@
+<!-- rules index -->
+<div class="container-fluid py-3 my-5">
+    <p class='font yellow text-center mt-5 py-2 rules-page-title'>Regulament</p>
+    <div class="row my-5 justify-content-around">
+        <% @rules.each do |r| %>
+        <div class="col-11 col-sm-8 col-md-5 my-2 mx-1 d-flex content-justify-center align-items-center font yellow rule-card round-border">
+            <%= cl_image_tag r.photo.key, height: "90%" %>
+            <p class='f-w-light-y m-0 pl-2'><%= r.body %> </p>
+            <% if current_user %>
+                <div class='rule-controls position-absolute d-flex flex-column'>
+                    <%= link_to edit_rule_path(r) do %>
+                        <i class="fas fa-edit"></i>
+                    <% end %>
+                    <%= link_to rule_path(r), method: :delete do %>
+                        <i class="fas fa-trash-alt"></i>
+                    <% end %>
+                </div>
+            <% end %>
+        </div>
+        <% end %>
+    </div>
+    
+    <% if current_user %>
+        <div class="row mx-2 my-5 justify-content-center">
+            <div class="col-12 col-sm-8 col-md-5 font yellow mb-5">
+                <%= render 'shared/create_rule'%>
+            </div>
+        </div>
+    <% end %>
+</div>
