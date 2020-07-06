@@ -1,6 +1,9 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: $yellow $yellow;
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
 }
 .articles {
   scrollbar-width: thin;
@@ -75,6 +78,11 @@ a {
 .scroll {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.scroll-x {
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 textarea.form-control {

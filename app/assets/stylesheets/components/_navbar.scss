@@ -21,10 +21,17 @@
   color: $blue;
 }
 
+.navbar-toggler-icon {
+  background-image: image_url('swimmer.svg') !important;
+}
+
 @media(max-width: 575px) {
   .navbar-nav {
     padding: 20px;
     flex-direction: row;
     justify-content: center;
+  }
+  .nav-item{
+    margin-left: 10px;
   }
 }

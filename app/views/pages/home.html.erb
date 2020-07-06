@@ -2,9 +2,11 @@
   <div class="row mt-3 mt-md-2 mt-xl-0 home-master justify-content-around mx-2">
     <!-- video div -->
     <div class="col-12 col-sm-11 mb-sm-5 mt-sm-4 mt-md-0 col-xl-4 video-div home-div d-flex justify-content-center align-items-center rounded-border box-shadow">
-      <video id='home-video' class='rounded-border' autoplay loop muted playsinline>
-        <source src='<%= video_path('aqua.WebM') %>' type='video/webm;codecs="vp8,vorbis"'>
-        <source src='https://res.cloudinary.com/www-aquaclub-ro/video/upload/v1592901665/aqua_kiqw88.mp4'>
+      <video id='home-video' class='rounded-border' autostart autoplay loop muted playsinline>
+        <source src='<%= video_path('AquaClubClip.webm') %>' type='video/webm;codecs="vp8,vorbis"'>
+        <source src='<%= video_path('AquaClub.mp4') %>' type='video/mp4;codecs="AVC1.4D401E, MP4A.40.2"'>
+        <source src='<%= video_path('AquaClubClip.mp4') %>' type='video/mp4;codecs="AVC1.4D401E, MP4A.40.2"'>
+        <!-- <source src='https://res.cloudinary.com/www-aquaclub-ro/video/upload/v1592901665/aqua_kiqw88.mp4'> -->
       </video>
       
     </div>
