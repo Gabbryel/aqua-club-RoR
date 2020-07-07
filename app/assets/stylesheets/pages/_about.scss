@@ -19,8 +19,13 @@
 }
 
 .about-p-font {
-    font-size: calc(1rem + .7vw);
-    line-height: 1.1;
+    font-size: calc(1rem + .35vw);
+    line-height: 1.3;
+}
+
+.about-history {
+    font-size: calc(1rem + .35vw);
+    line-height: 1.3;
 }
 
 .about-motto {
@@ -31,6 +36,7 @@
     animation: 
     typing 4.5s steps(40, end),
 }
+
 
 @keyframes typing {
     from { width: 0 }
@@ -51,7 +57,7 @@
     p {
         margin: 0;
     }
-    #photo-title {
+    .photo-title {
         font-size: calc(1rem + .4vw);
     }
     .photo-describe {
@@ -67,5 +73,5 @@
 }
 
 #foca {
-    width: 250px;
+    width: 100%;
 }
