@@ -3,18 +3,18 @@
     <%= image_tag('undraw_developer_activity_bv83.svg', class: 'd-block') %>
 </div> -->
 
-<div class="container-fluid about-container font mb-5">
+<div class="container-fluid about-container font">
     <div class="row justify-content-center">
         <div class="col yellow mb-3">
             <p class="text-center m-0">Aqua Club</p>
             <p class="text-center m-0 about-p-font">Bacău, str. Lunca Bistriței, nr. 1</p>
-            <p class="text-center m-0 about-p-font">telefon: +4 0745 377 149 • e-mail; office@markov.ro</p>
+            <p class="text-center m-0 about-p-font"><i class="fas fa-phone"></i> +4 0745 377 149  <i class="fas fa-envelope-open-text"></i> office@markov.ro</p>
             <p class="text-center m-0 about-p-font">MARKOV SERVICES S.A. • J04/32/1991 • RO947854</p>
         </div>
     </div>
     <hr class='bck-yellow mb-4'>
     <div class="row">
-        <div class="col d-flex about-images-container scroll-x">
+        <div class="col d-flex about-images-container scroll-x f-w-light-y">
             <div class="photo">
                 <%= image_tag('aquaAnsamblu.png', class:'mr-4 round-border') %>
                 <div class='font yellow round-border'>
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="photo">
-                <%= image_tag('aquaPiscina5.png', class:'mr-4 round-border') %>
+                <%= image_tag('aquaPiscina5.png', class: 'mr-4 round-border') %>
                 <div class='font yellow round-border'>
                     <p id='photo-title'>Piscina cu tobogane pentru copii</p>
                     <p class='photo-describe'>suprafața: 144mp</p>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="photo">
-                <%= image_tag('aquaPiscina2&3.png', class:'mr-4 round-border') %>
+                <%= image_tag('aquaPiscina2&3.png', class: 'mr-4 round-border') %>
                 <div class='font yellow round-border'>
                     <p id='photo-title'>Piscinele pentru înot & copii</p>
                     <p class='photo-describe'>suprafața: 120mp ● 9mp</p>
@@ -73,5 +73,11 @@
             </div>
         </div>
     </div>
-    <hr class='bck-yellow mb-5'>
+    <hr class='bck-yellow mb-2'>
+    <div class="row mb-5">
+        <div class="col d-flex flex-column align-items-center">
+            <%= image_tag('foca.png', id: 'foca') %>
+            <p class='m-0 p-0 yellow'>#varaastafacemvaluri</p>
+        </div>
+    </div>
 </div>
