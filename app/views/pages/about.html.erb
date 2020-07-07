@@ -5,11 +5,12 @@
 
 <div class="container-fluid about-container font">
     <div class="row justify-content-center">
-        <div class="col yellow mb-3">
-            <p class="text-center m-0">Aqua Club</p>
-            <p class="text-center m-0 about-p-font">Bacău, str. Lunca Bistriței, nr. 1</p>
-            <p class="text-center m-0 about-p-font"><i class="fas fa-phone"></i> +4 0745 377 149  <i class="fas fa-envelope-open-text"></i> office@markov.ro</p>
-            <p class="text-center m-0 about-p-font">MARKOV SERVICES S.A. • J04/32/1991 • RO947854</p>
+        <div class="col yellow mb-3 text-center">
+            <p class="m-0">Aqua Club</p>
+            <p class='m-0 about-p-font mb-3 about-motto'>#varaastafacemvaluri</p>
+            <p class="m-0 about-p-font">Bacău, str. Lunca Bistriței, nr. 1</p>
+            <p class="m-0 about-p-font"><i class="fas fa-phone"></i> +4 0745 377 149  <i class="fas fa-envelope-open-text ml-3"></i> office@markov.ro</p>
+            <p class="m-0 about-p-font">MARKOV SERVICES S.A. • J04/32/1991 • RO947854</p>
         </div>
     </div>
     <hr class='bck-yellow mb-4'>
@@ -21,6 +22,14 @@
                     <p id='photo-title'>Aqua Club</p>
                     <p class='photo-describe'>suprafața plajă: 2800mp</p>
                     <p class='photo-describe'>suprafață apă: aprox. 880mp</p>
+                </div>
+            </div>
+            <div class="photo">
+                <%= image_tag('aquaTerasa.png', class:'mr-4 round-border') %>
+                <div class='font yellow round-border'>
+                    <p id='photo-title'>Terasa Aqua Club</p>
+                    <p class='photo-describe'>suprafața: 120mp</p>
+                    <p class='photo-describe'>locuri: 72</p>
                 </div>
             </div>
             <div class="photo">
@@ -64,7 +73,7 @@
                 </div>
             </div>
             <div class="photo">
-                <%= image_tag('https://via.placeholder.com/400x225.png?text=Piscina+înot+contra+curent', class:'mr-4 round-border') %>
+                <%= image_tag('aquaPiscina6.png', class:'mr-4 round-border') %>
                 <div class='font yellow round-border'>
                     <p id='photo-title'>Piscina pentru înot contra curentului</p>
                     <p class='photo-describe'>suprafața: 40mp</p>
@@ -76,8 +85,7 @@
     <hr class='bck-yellow mb-2'>
     <div class="row mb-5">
         <div class="col d-flex flex-column align-items-center">
-            <%= image_tag('foca.png', id: 'foca') %>
-            <p class='m-0 p-0 yellow'>#varaastafacemvaluri</p>
+            <%= image_tag('foca.png', id: 'foca', class: 'mb-5') %>
         </div>
     </div>
 </div>
