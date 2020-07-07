@@ -25,7 +25,18 @@
 
 .about-motto {
     font-size: calc(1.1rem + 1vw);
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 4.5s steps(40, end),
 }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
 
 .photo {
     position: relative;
