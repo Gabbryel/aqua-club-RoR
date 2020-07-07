@@ -22,23 +22,14 @@
     z-index: 1;
 }
 
-.modal-prices p {
-    font-size: calc(2vh + 1vw);
+.prices-bigfont {
+    font-size: clamp(1.2rem, 3vw, 2.5rem) !important;
 }
 
-.modal-prices-disclaimer {
-    font-size: calc(1vh + 1vw) !important;
+.prices-smfont {
+    font-size: clamp(1rem, 3vw, 1.8rem) !important;
 }
 
-.modal-body h3 img {
+.modal-body p img {
     width: 10%;
-}
-
-@media (max-width: 576px) {
-    .modal-body p {
-        font-size: calc(1vh + 2.5vw);
-    }
-    .modal-prices-disclaimer {
-        font-size: calc(1vh + 2.4vw) !important;
-    }
 }
