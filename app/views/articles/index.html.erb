@@ -2,7 +2,7 @@
     <div class="row justify-content-center align-items-center flex-column py-5 mb-5 articles-container">
         <h1 class='font yellow p-4 mb-5'>Comunicate</h1>
         <% @articles.each do |a| %>
-            <div class="col-10 col-md-8 col-lg-7 my-2 p-5 font yellow bck-blue round-border article-body">
+            <div class="col-10 col-md-8 col-lg-7 my-2 p-3 font yellow bck-blue round-border article-body">
                 <p><%= a.body %></p>
                 <p><%= a.created_at.to_s.split(' ').first.split('-').reverse().join('-') %></p>
                 <% if current_user %>

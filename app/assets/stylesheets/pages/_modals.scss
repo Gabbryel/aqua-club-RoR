@@ -30,6 +30,10 @@
     font-size: clamp(1.3rem, 3vw, 1.8rem) !important;
 }
 
+.modal-body p {
+    font-size: calc(1rem + .6vw)
+}
+
 .modal-body p img {
     width: 10%;
 }
