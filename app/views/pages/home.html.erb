@@ -88,7 +88,7 @@
       <div class="articles scroll">
         <% @articles.each do |a| %>
           <div class="article mb-2 p-2 text-justify">
-            <p><%= a.title %></p>
+            <p class='text-center'><%= a.title %></p>
             <p><%= a.body %></p>
             <p><%= a.final %></p>
             <p><%= a.created_at.to_s.split(' ').first.split('-').reverse().join('-') %></p>
