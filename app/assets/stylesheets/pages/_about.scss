@@ -37,6 +37,20 @@
     typing 4.5s steps(40, end),
 }
 
+.about-arrow {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .about-arrow {
+        display: inline;
+        position: fixed;
+        z-index: 1;
+        right: 10px;
+        color: $yellow;
+    }
+}
+
 
 @keyframes typing {
     from { width: 0 }

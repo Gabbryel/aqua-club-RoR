@@ -1,13 +1,11 @@
 * {
-  scrollbar-width: thin;
-  scrollbar-color: $yellow $yellow;
+  scrollbar-width: none;
   ::-webkit-scrollbar {
     width: 1px;
   }
 }
 .articles {
-  scrollbar-width: thin;
-  scrollbar-color: $yellow $yellow;
+  scrollbar-width: enon;
 }
 // scroll bar
 .articles::-webkit-scrollbar {
@@ -47,6 +45,36 @@ a {
   }
 }
 
+.light-blue {
+  color: $light-blue;
+  a {
+    color: $light-blue;
+  }
+  &:hover {
+    color: $light-blue;
+  }
+}
+
+.neon-green {
+  color: $neon-green;
+  a {
+    color: $neon-green;
+  }
+  &:hover {
+    color: $neon-green;
+  }
+}
+
+.dark-green {
+  color: $dark-green;
+  a {
+    color: $dark-green;
+  }
+  &:hover {
+    color: $dark-green;
+  }
+}
+
 .yellow {
   color: $yellow;
   a {
@@ -62,10 +90,22 @@ a {
   background-color: $yellow;
 }
 
+.bck-neon-green {
+  background-color: $neon-green;
+}
+
+.bck-light {
+  background-color: rgba(0,0,0,.1);
+}
+
 .round-border {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
+}
+
+.neon-square-button {
+  border: 2px solid $neon-green;
 }
 
 .hover {
@@ -86,7 +126,6 @@ a {
 
 textarea.form-control {
   height: 100px;
-  border-radius: 20px;
 }
 
 .box-shadow {

@@ -1,17 +1,17 @@
-<div class="container-fluid desktop position-relative blue">
-  <div class="row mt-3 mt-md-2 mt-xl-0 home-master justify-content-around mx-2">
+<!-- <div class="container-fluid desktop position-relative blue">
+  <div class="row mt-3 mt-md-2 mt-xl-0 home-master justify-content-around mx-2"> -->
     <!-- video div -->
-    <div class="col-12 col-sm-11 mb-sm-5 mt-sm-4 mt-md-0 col-xl-4 video-div home-div d-flex justify-content-center align-items-center rounded-border box-shadow">
+    <!-- <div class="col-12 col-sm-11 mb-sm-5 mt-sm-4 mt-md-0 col-xl-4 video-div home-div d-flex justify-content-center align-items-center rounded-border box-shadow">
       <video id='home-video' class='rounded-border' autostart autoplay loop muted playsinline>
         <source src='<%= video_path('AquaClubClip.webm') %>' type='video/webm;codecs="vp8,vorbis"'>
         <source src='<%= video_path('AquaClub.mp4') %>' type='video/mp4;codecs="AVC1.4D401E, MP4A.40.2"'>
-        <source src='<%= video_path('AquaClubClip.mp4') %>' type='video/mp4;codecs="AVC1.4D401E, MP4A.40.2"'>
+        <source src='<%= video_path('AquaClubClip.mp4') %>' type='video/mp4;codecs="AVC1.4D401E, MP4A.40.2"'> -->
         <!-- <source src='https://res.cloudinary.com/www-aquaclub-ro/video/upload/v1592901665/aqua_kiqw88.mp4'> -->
-      </video>
+      <!-- </video> -->
       
-    </div>
+    <!-- </div> -->
     <!-- news div -->
-    <div class="col-12 col-sm-6 col-xl-4 home-div mb-md-5 bck-yellow box-shadow news-container">
+    <!-- <div class="col-12 col-sm-6 col-xl-4 home-div mb-md-5 bck-yellow box-shadow news-container">
       <h1 class='font text-center blue font-weight mt-4 mb-3 news-div'><i class="fas fa-newspaper mr-3"></i>News</h1>
       <div class="articles scroll bck-yellow p-0 round-border">
           <% @articles.each do |a| %>
@@ -29,10 +29,10 @@
           <% end %>
           <%= link_to '👉articole mai vechi', articles_path, class: 'text-center font d-block text-center' %>
       </div>
-    </div>
+    </div> -->
     
    <!-- nav div -->
-    <div class="col-12 col-sm-4 col-xl-3 home-3rd-div mb-md-5 d-flex flex-column p-0">
+    <!-- <div class="col-12 col-sm-4 col-xl-3 home-3rd-div mb-md-5 d-flex flex-column p-0">
       <div class="row home-div d-flex align-content-between justify-content-center">
         <div class='col-11 about box-shadow' data-toggle="modal" data-target="#covid-19">
           <p class='font text-center m-0 d-flex justify-content-center align-items-center blue font-weight' ><i class="fas fa-virus mr-3"></i> Covid-19</p>
@@ -51,6 +51,74 @@
           <% end %>
           </div>
       </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- new home page -->
+
+<div class="container-fluid home-container scroll">
+  <div class="row row-1 justify-content-center flex-sm-row mx-0 mx-sm-3">
+    <div class="col-12 col-sm-6 col-lg-5 d-flex flex-column justify-content-center align-items-start home-fonts-row1 neon-green">
+      <p class='text-left home-fonts-shadow-row1 ml-0 ml-md-2 ml-lg-5'><i class="fas fa-hashtag mr-3"></i>varaastafacemvaluri</p>
+      <p class='text-left home-fonts-shadow-row1 ml-0 ml-md-2 ml-lg-5'><i class="fas fa-swimmer mr-3"></i>880mp de apă</p>
+      <p class='text-left home-fonts-shadow-row1 ml-0 ml-md-2 ml-lg-5'><i class="fas fa-umbrella-beach mr-3"></i>2800mp de plajă</p>
+      <p class='text-left home-fonts-shadow-row1 ml-0 ml-md-2 ml-lg-5'><i class="fas fa-water mr-3"></i></i>piscină cu valuri</p>
+      <p class='text-left home-fonts-shadow-row1 ml-0 ml-md-2 ml-lg-5'><i class="fas fa-bacon mr-3"></i></i>piscină cu tobogane</p>
+      <p class='text-left home-fonts-shadow-row1 ml-0 ml-md-2 ml-lg-5'><i class="fas fa-chair mr-3"></i></i>700 de șezlonguri*</p>
+
+    </div>
+    <!-- video div -->
+    <div class="col-12 col-sm-6 col-lg-7 video-container p-0 d-flex justify-content-center">
+      <video id='home-video' poster="<%= image_path('aquaAnsamblu.png')%>" autostart autoplay loop muted playsinline>
+        <source src='<%= video_path('AquaClubClip.webm') %>' type='video/webm;codecs="vp8,vorbis"'>
+        <source src='<%= video_path('AquaClub.mp4') %>' type='video/mp4;codecs="AVC1.4D401E, MP4A.40.2"'>
+        <source src='<%= video_path('AquaClubClip.mp4') %>' type='video/mp4;codecs="AVC1.4D401E, MP4A.40.2"'>
+        <!-- <source src='https://res.cloudinary.com/www-aquaclub-ro/video/upload/v1592901665/aqua_kiqw88.mp4'> -->
+      </video>
+    </div>
+  </div>
+  <div class="row row-2 scroll my-5 mx-0 mx-sm-3 align-items-start">
+    <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center font neon-green mb-5">
+      <%= link_to articles_path do %>
+        <p class='text-center news-title home-button'><i class="fas fa-exclamation-circle mr-2"></i>Comunicate</p>
+        <p class='pl-2 m-0 mb-2 hover home-call-to-action'><i class="far fa-hand-point-right mr-3"></i>Toate comunicatele...</p>
+      <% end %>
+      <div class="articles scroll">
+        <% @articles.each do |a| %>
+          <div class="article mb-2 p-2 text-justify">
+            <p><%= a.body %></p>
+            <p><%= a.created_at.to_s.split(' ').first.split('-').reverse().join('-') %></p>
+          </div>      
+        <% end %>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center font neon-green mb-5">
+        <p class='text-center news-title home-button hover' data-toggle="modal" data-target="#covid-19"><i class="fas fa-virus mr-2"></i>Covid-19</p>
+        <p class='pl-2 m-0 mb-2 hover home-call-to-action'' data-toggle="modal" data-target="#covid-19"><i class="far fa-hand-point-right mr-3"></i>Regulamentul Covid-19...</p>
+      <div class="articles scroll">
+        <div class="covid-19 text-justify p-2">
+          <p class='p-2'>Citește regulile pe care noi le impunem tuturor clienților noștri în perioada pandemiei. Dacă ești de acord cu ele,
+            ești binevenit! Nimeni din echipa Aqua Club nu are pregătire medicală, nu avem virusologi și nici 
+            epidemiologi în echipă. Așadar discuțiile despre existența sau nu a virusului ne depășesc.
+          </p>
+          <p class="p-2">*Pe perioada pandemiei Covid-19 Aqua Club reduce capacitatea maximă la cca. 200 de locuri.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center font neon-green mb-5">
+        <p class='text-center news-title home-button hover' data-toggle="modal" data-target="#prices"><i class="fas fa-coins mr-2"></i>Prețuri</p>
+        <p class='pl-2 m-0 mb-2 hover home-call-to-action'' data-toggle="modal" data-target="#prices"><i class="far fa-hand-point-right mr-3"></i>Mai multe informații...</p>
+      <div class="articles scroll">
+        <div class="prices text-center  p-2">
+          <p class='home-prices-lg m-0'>Luni - Vineri</p>
+          <p class='home-prices-sm m-0'>30 lei/persoană</p>
+          <p class='home-prices-sm m-0'>25 lei/copil ( 3 - 14 ani )</p>
+          <p class='home-prices-lg m-0'>Week-end & zile libere</p>
+          <p class='home-prices-sm m-0'>40 lei/persoană</p>
+          <p class='home-prices-sm m-0'>30 lei/copil > ( 3 - 14 ani )</p>
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,46 @@
+.design {
+    position: fixed;
+    top: -35vh;
+    left: -10vw;
+    background-color: $blue;
+    width: 150%;
+    height: 100%;
+    transform: rotate(-10deg);
+    border-radius: 300px;
+    z-index: -1;
+    .big-circle, .mid-circle, .sm-circle {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 2px solid $light-blue;
+    }
+
+    .mid-circle {
+        height: 25px;
+        width: 25px;
+    }
+    .sm-circle {
+        height: 10px;
+        width: 10px;
+    }
+}
+
+.big-circle-blue, .mid-circle-blue, .sm-circle-blue {
+    position: fixed;
+    border-radius: 50%;
+    border: 2px solid $blue;
+    z-index: -1;
+}
+.big-circle-blue {
+    height: 50px;
+    width: 50px;
+}
+.mid-circle-blue {
+    height: 25px;
+    width: 25px;
+}
+.sm-circle-blue {
+    height: 10px;
+    width: 10px;
+}

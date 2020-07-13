@@ -1,13 +1,17 @@
-<% if @article.id %>
-    <h1 class='font yellow f-w-light-y text-center my-5'>Modifică articolul</h1>
-<% else %>
-    <h1 class='font yellow f-w-light-y text-center my-5'>Articol nou</h1>
-<% end %>
-<%= simple_form_for @article do |f| %>
-<%= f.input :body, label: 'Conținutul articolului', label_html: { class: 'font yellow'} %>
-<% if @article.id %>
-    <%= f.button :submit, value: 'Salvează', class: 'font blue bck-yellow  f-w-light' %>
-<% else %>
-    <%= f.button :submit, value: 'Articol nou', class: 'font blue bck-yellow  f-w-light' %>
-<% end %>
-<% end %>
+<div class='neon-green create-article-font'>
+    <% if @article.id %>
+        <p class='text-center mt-5 create-article-font'>Modifică comunicatul</p>
+    <% else %>
+        <p class='text-center mt-5 create-article-font'>Creează un comunicat</p>
+    <% end %>
+    <%= simple_form_for @article do |f| %>
+        <%= f.input :title, label: 'Titlu' %>
+        <%= f.input :body, label: 'Conținut' %>
+        <%= f.input :final, label: 'Final line' %>
+        <% if @article.id %>
+            <%= f.button :submit, value: 'Salvează', class: 'bck-light neon-square-button' %>
+        <% else %>
+            <%= f.button :submit, value: 'Comunicat nou', class: 'bck-light neon-square-button' %>
+        <% end %>
+    <% end %>
+</div>

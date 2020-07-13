@@ -1,145 +1,256 @@
+// html, body {
+//   position: relative;
+//   background-color: $blue;
+//   width: 100%;
+//   height: 100%;
+//   scrollbar-width: 1px;
+//   font: $font;
+// }
+
+// .desktop {
+//   top: 20vh;
+// }
+
+// .mobile {
+//   display: none;
+// }
+
+// .home-master {
+//   height: 80vh;
+// }
+
+// .home-div, .home-3rd-div {
+//   position: relative;
+//   border-radius: 20px;
+//   height: 60vh;
+// }
+
+// .home-3rd-div p {
+//   font-size: calc(1vh + 2vw);
+// }
+
+// .home-div i, .about i, .rules i, .prices i {
+//   font-size: calc( 2vh + 2vw);
+// }
+
+// .about, .rules, .prices {
+//   height: 22%;
+//   width: 100%;
+//   background-color: $yellow;
+//   border-radius: 20px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: start;
+//   padding-left: 10%;
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
+// .news-div {
+//   height: 10%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .video-div {
+//   overflow: hidden;
+//   z-index: 2;
+//   #home-video {
+//     position: absolute;
+//     min-width: 100%;
+//     min-height: 100%;
+//     img {
+//       height: 100%;
+//       object-fit: cover;
+//     }
+//   }
+
+// }
+
+// .articles {
+//   position: relative;
+//   height: 70%;
+// }
+// .article {
+//   position: relative;
+//   width: 100%;
+//   margin: 0 auto;
+// }
+// .article p {
+//   font-size: calc( 1rem + .8vw );
+// }
+
+
+// .news-edit {
+//   position: relative;
+//   left: 20px;
+// }
+
+// // media queries 
+
+// @media only screen and (max-width: 1199px) and (min-width: 576px)  {
+//   .home-master {
+//     height: 80vh;
+//   }
+//   .home-div, .home-3rd-div {
+//     position: relative;
+//     border-radius: 20px;
+//     height: 35vh;
+//   }
+//   .desktop {
+//     top: 10vh;
+//   }
+//   .about, .rules, .prices {
+//     padding-left: 10%;
+//   }
+// }
+
+// @media only screen and (max-width: 575px) {
+//   .desktop {
+//     top: 10vh;
+//   }
+  
+//   .home-div {
+//     margin-top: 30px;
+//     position: relative;
+//     border-radius: 20px;
+//     height: 30vh;
+//   }
+//   .home-3rd-div {
+//     height: 80vh;
+//     margin-bottom: 60px;
+//   }
+  
+//   .news-container {
+//     height: 50vh;
+//   }
+
+//   .about, .rules, .prices {
+//     height: 40%;
+//     margin-bottom: 30px;
+//     padding-left: 20%;
+//   }
+  
+//   .about i, .rules i, .prices i {
+//     font-size: calc( 2vh + 3.5vw);
+//   }
+  
+//   // .articles p {
+//   //   font-size: 4vw;
+//   // }
+
+//   .about p, .rules p, .prices p {
+//     font-size: 7vw;
+//   }
+// }
+
+
+
+// new home page
+
+
 html, body {
+    position: relative;
+    background-color: $light-blue;
+    width: 100%;
+    height: 100%;
+    scrollbar-width: 1px;
+    font-family: $font;
+    z-index: -3;
+}
+
+.home-container {
   position: relative;
-  background-color: $blue;
-  width: 100%;
-  height: 100%;
-  scrollbar-width: 1px;
-  font: $font;
+  top: 150px;
+  z-index: 1;
+  margin-bottom: 100px;
 }
 
-.desktop {
-  top: 20vh;
+.row-1 {
+  height: 50vh;
+  line-height: 1;
+  margin-bottom: 100px;
+}
+.home-fonts-row1 {
+  font-size: calc(.5rem + 2vw);
 }
 
-.mobile {
-  display: none;
+.home-fonts-shadow-row1 {
+  text-shadow: 0px 0px 2px $neon-green;
 }
 
-.home-master {
-  height: 80vh;
-}
-
-.home-div, .home-3rd-div {
+.video-container {
   position: relative;
-  border-radius: 20px;
-  height: 60vh;
-}
-
-.home-3rd-div p {
-  font-size: calc(1vh + 2vw);
-}
-
-.home-div i, .about i, .rules i, .prices i {
-  font-size: calc( 2vh + 2vw);
-}
-
-.about, .rules, .prices {
-  height: 22%;
-  width: 100%;
-  background-color: $yellow;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding-left: 10%;
-  &:hover {
-    cursor: pointer;
-  }
-}
-.news-div {
-  height: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.video-div {
   overflow: hidden;
-  z-index: 2;
   #home-video {
     position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    img {
-      height: 100%;
-      object-fit: cover;
-    }
+    height: 100%;
   }
-
 }
+
 
 .articles {
-  position: relative;
-  height: 70%;
+  height: auto;
+  max-height: 250px;
 }
-.article {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-}
-.article p {
-  font-size: calc( 1vh + .8vw );
+
+.article, .covid-19 {
+  font-size: calc(1rem + .5vw);
 }
 
 
-.news-edit {
-  position: relative;
-  left: 20px;
+.news-title {
+  font-size: calc(1.5rem + 1vw);
 }
 
-// media queries 
-
-@media only screen and (max-width: 1199px) and (min-width: 576px)  {
-  .home-master {
-    height: 80vh;
+.prices {
+  .home-prices-lg {
+    font-size: calc(1rem + 1vw);
   }
-  .home-div, .home-3rd-div {
+  .home-prices-sm {
+    font-size: calc(.7rem + 1vw);
+  }
+}
+
+.home-button {
+  border: 2px solid $neon-green;
+  background-color: rgba(0,0,0,.2);
+}
+
+.home-call-to-action {
+  font-size: calc(.5rem + 1vw);
+}
+
+// media
+
+@media (max-width: 575px) {
+  .row-1 {
+    height: auto;
+    margin-bottom: 0;
+  }
+  .video-container {
     position: relative;
-    border-radius: 20px;
-    height: 35vh;
+    width: 100%;
+    height: 300px;
+    overflow: visible;
+    #home-video {
+      width: 100%;
+    }
   }
-  .desktop {
-    top: 10vh;
+  .home-fonts-row1 {
+    font-size: 6.5vw;
+    margin-left: 5vw;
   }
-  .about, .rules, .prices {
-    padding-left: 10%;
+  .prices {
+    .home-prices-lg {
+      font-size: calc(1.5rem + 2vw);
+    }
+    .home-prices-sm {
+      font-size: calc(1.2rem + 1vw);
+    }
   }
-}
-
-@media only screen and (max-width: 575px) {
-  .desktop {
-    top: 10vh;
-  }
-  
-  .home-div {
-    margin-top: 30px;
-    position: relative;
-    border-radius: 20px;
-    height: 30vh;
-  }
-  .home-3rd-div {
-    height: 80vh;
-    margin-bottom: 60px;
-  }
-  
-  .news-container {
-    height: 50vh;
-  }
-
-  .about, .rules, .prices {
-    height: 40%;
-    margin-bottom: 30px;
-    padding-left: 20%;
-  }
-  
-  .about i, .rules i, .prices i {
-    font-size: calc( 2vh + 3.5vw);
-  }
-  
-  .articles p {
-    font-size: 4vw;
-  }
-
-  .about p, .rules p, .prices p {
-    font-size: 7vw;
+  .home-call-to-action {
+    font-size: calc(.9rem + 1vw);
   }
 }
+// media
