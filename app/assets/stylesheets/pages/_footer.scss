@@ -1,9 +1,10 @@
 footer {
   // height: 8vh;
   width: 100%;
-  background-color: $yellow;
+  background-color: $neon-green;
   position: fixed;
   bottom: 0px;
+  z-index: 10;
 }
 
 .footer-social i {

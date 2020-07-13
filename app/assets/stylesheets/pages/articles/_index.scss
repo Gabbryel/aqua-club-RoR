@@ -1,15 +1,33 @@
 .articles-container {
     position: relative;
     top: 10vh;
+    font-size: calc(2rem + 1vw);
 }
 
 .article-body {
-    border: 1px solid $yellow;
     p { 
         font-size: calc(1rem + 1vw);
     }
 }
 
+#article-id {
+    font-size: 1rem;
+}
+
+.articles-index-container {
+    height: 50vh;
+}
+
+.article-index-new {
+    margin-bottom: 150px;
+}
+
+.news-edit {
+    font-size: .8rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 @media (max-width: 576px) {
     .article-body {
         font-size: calc(1vh + 2.5vw)

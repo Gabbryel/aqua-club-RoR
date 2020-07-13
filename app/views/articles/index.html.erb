@@ -1,25 +1,32 @@
-<div class="container-fluid">
-    <div class="row justify-content-center align-items-center flex-column py-5 mb-5 articles-container">
-        <h1 class='font yellow p-4 mb-5'>Comunicate</h1>
+<div class="container-fluid articles-container scroll">
+    <p class='neon-green p-4 mb-5 text-center'>Comunicate Aqua Club</p>
+    <div class="row justify-content-center py-5 mb-5 articles-index-container scroll">
         <% @articles.each do |a| %>
-            <div class="col-10 col-md-8 col-lg-7 my-2 p-3 font yellow bck-blue round-border article-body">
-                <p><%= a.body %></p>
-                <p><%= a.created_at.to_s.split(' ').first.split('-').reverse().join('-') %></p>
+            <div class="col-10 col-md-7 col-lg-8 my-2 p-3 font scroll neon-green round-border article-body bck-light">
+                <p id='article-id'>Comunicat: <%= a.id %> din <%= a.created_at.to_s.split(' ').first.split('-').reverse().join('-') %></p></p>
+                <p class='text-center'><%= a.title %></p>
+                <p class='text-justify'><%= a.body %></p>
+                <p class='text-justify'><%= a.final %></p>
                 <% if current_user %>
                   <div class="news-edit">
-                    <%= link_to 'edit', edit_article_path(a) %>
-                    <%= link_to 'del', article_path(a), method: :delete %>
+                    <%= link_to edit_article_path(a) do %>
+                                        <i class="fas fa-edit"></i>
+                                   <% end %>
+                    
+                    <%= link_to article_path(a), method: :delete do %>
+                                        <i class="fas fa-trash-alt"></i>
+                                   <% end %>
+                    
                   </div>
                 <% end %>
             </div>
         <% end %>
     </div>
-    <div class="row justify-content-center mb-5">
-        <div class="col-10 col-md-8 col-lg-7 mb-5">
+    <div class="row justify-content-center article-index-new">
+        <div class="col-10 col-md-8 col-lg-7">
             <% if current_user %>
                 <%= render 'shared/create_article' %>
             <% end  %>
         </div>
-
     </div>
 </div>
