@@ -88,7 +88,9 @@
       <div class="articles scroll">
         <% @articles.each do |a| %>
           <div class="article mb-2 p-2 text-justify">
+            <p><%= a.title %></p>
             <p><%= a.body %></p>
+            <p><%= a.final %></p>
             <p><%= a.created_at.to_s.split(' ').first.split('-').reverse().join('-') %></p>
           </div>      
         <% end %>
@@ -100,9 +102,11 @@
       <div class="articles scroll">
         <div class="covid-19 text-justify p-2">
           <p class='p-2'>Citește regulile pe care noi le impunem tuturor clienților noștri în perioada pandemiei. Dacă ești de acord cu ele,
-            ești binevenit! Nimeni din echipa Aqua Club nu are pregătire medicală, nu avem virusologi și nici 
-            epidemiologi în echipă. Așadar discuțiile despre existența sau nu a virusului ne depășesc.
+            ești binevenit!
           </p>
+          <p class="p-2">Nimeni din echipa Aqua Club nu are pregătire medicală, nu avem virusologi și nici 
+            epidemiologi în echipă. Așadar discuțiile despre existența sau nu a virusului ne depășesc.</p>
+
           <p class="p-2">*Pe perioada pandemiei Covid-19 Aqua Club reduce capacitatea maximă la cca. 200 de locuri.</p>
         </div>
       </div>
