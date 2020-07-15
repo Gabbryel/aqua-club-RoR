@@ -191,13 +191,15 @@ html, body {
 
 .articles {
   height: auto;
-  max-height: 270px;
+  max-height: 350px;
 }
 
 .article, .covid-19 {
   font-size: calc(1rem + .5vw);
 }
-
+.article-title {
+  font-size: calc(1.6rem + .5vw);
+}
 
 .news-title {
   font-size: calc(1.5rem + 1vw);
@@ -238,8 +240,8 @@ html, body {
     }
   }
   .home-fonts-row1 {
-    font-size: 6.5vw;
-    margin-left: 5vw;
+    font-size: calc(.8rem + 5vw);
+    margin-left: 6vw;
   }
   .prices {
     .home-prices-lg {
