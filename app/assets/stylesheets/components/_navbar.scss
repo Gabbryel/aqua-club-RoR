@@ -7,12 +7,17 @@
   z-index: 10;
 }
 
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 100px;
+  width: 110px;
 }
 
 .nav-item i::before {
