@@ -195,6 +195,7 @@ html, body {
 
 .article, .covid-19 {
   font-size: calc(1rem + .5vw);
+  text-indent: 20px;
 }
 .article-title {
   font-size: calc(1.6rem + .5vw);
@@ -245,17 +246,17 @@ html, body {
   }
   .prices {
     .home-prices-lg {
-      font-size: calc(1.5rem + 2vw);
+      font-size: calc(1.3rem + 2vw);
     }
     .home-prices-sm {
-      font-size: calc(1.2rem + 1vw);
+      font-size: calc(1.1rem + 1vw);
     }
   }
   .home-call-to-action {
     font-size: calc(.9rem + 1vw);
   }
   .article, .covid-19 {
-    font-size: calc(1.2rem + .5vw);
+    font-size: calc(1rem + .5vw);
   }
 }
 // media
