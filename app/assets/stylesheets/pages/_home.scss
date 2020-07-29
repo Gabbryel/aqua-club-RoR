@@ -225,6 +225,12 @@ html, body {
 }
 
 // media
+@media (max-width: 991px) {
+  .articles {
+    height: 250px;
+  }
+
+}
 
 @media (max-width: 575px) {
   .row-1 {
@@ -244,6 +250,7 @@ html, body {
     font-size: calc(.8rem + 4vw);
     margin-left: 6vw;
   }
+
   .prices {
     .home-prices-lg {
       font-size: calc(1.3rem + 2vw);
